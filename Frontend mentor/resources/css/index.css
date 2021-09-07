@@ -150,13 +150,42 @@ body {background-color: var(--Pale-blue);
     font-weight: bold;
     width:350px;
     height:100px;
+    transition: all 0.5s;
+    cursor: pointer;
     box-shadow: unset;
     box-shadow: 10px 10px 10px 5px rgba(165, 161, 161, 0.2);
 }
 
-.cancel {
+.payment {
+  cursor: pointer;
+  display: inline-block;
+  position: relative;
+  transition: 0.5s;
+}
+
+button{
+    transition: all .5s ease;
+    color: #f7f7d5;
+    border: 3px solid white;
+    text-align: center;
+    line-height: 1;
+    font-size: 17px;
+    background-color : transparent;
+    padding: 10px;
+    outline: none;
+    border-radius: 4px;
+}
+
+button:hover {
+    color: #001F3F;
+    background-color:#f7f7d5;
+}
+
+.cancel a {
     margin-top: 30px;
     font-weight: bold;
+    text-decoration: none;
+    color:var(--Desaturated-blue)
 }
 
 .attribution { font-size: 11px;
@@ -164,6 +193,3 @@ body {background-color: var(--Pale-blue);
                margin-top: 100px;}
 .attribution a { color: hsl(228, 45%, 44%);
 }
-
-
-
